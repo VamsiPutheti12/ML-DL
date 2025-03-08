@@ -1,6 +1,9 @@
 # ML-DL
 Machine &amp; Deep Learning
 
+Supervised learning is a framework in machine learning where the model is trained using a dataset composed of features (inputs) and labels (desired outputs). The model learns the mapping from features to labels so that, when given new data, it can predict the label accurately. Below are two main types of supervised learning—regression and classification—with comprehensive details in terms of features and labels.
+
+
 ![linear-nonlinear-fit](https://github.com/user-attachments/assets/469310cc-595c-40da-a206-712e4f46add5)
 
 

@@ -1,1 +1,50 @@
+# 🎭 Facial Emotion Recognition with ResNet-18
+
+This project classifies human facial expressions into seven emotions using a deep convolutional neural network. It leverages **transfer learning** with a **pretrained ResNet-18** model and is trained on the **FER2013 dataset**. You can also test the model interactively using a web-based app powered by **Gradio**.
+
+---
+
+## 📂 Dataset
+
+- **Name**: [FER2013](https://www.kaggle.com/datasets/deadskull7/fer2013)
+- **Classes**:
+  - Angry 😠
+  - Disgust 🤢
+  - Fear 😨
+  - Happy 😄
+  - Sad 😢
+  - Surprise 😲
+  - Neutral 😐
+- **Format**: 48x48 grayscale images (converted to folders with PyTorch-compatible structure)
+
+---
+
+## 🧠 Model Overview
+
+| Component      | Details                 |
+|----------------|--------------------------|
+| Base Model     | ResNet-18 (pretrained on ImageNet) |
+| Final Layer    | Fully connected → 7 classes |
+| Framework      | PyTorch (via Google Colab) |
+| Loss Function  | CrossEntropyLoss         |
+| Optimizer      | Adam                     |
+| Augmentations  | Resize, Crop, Flip       |
+
+---
+
+## 📈 Results
+
+- ✅ **Train accuracy**: ~90%
+- ✅ **Validation accuracy**: ~75%
+- ✅ **Test accuracy**: ~72%
+- 📉 Includes loss/accuracy plots + confusion matrix
+- 🎨 Prediction visualizations from test images
+
+---
+
+## 🚀 How to Run
+
+### 🔧 1. Train the model (in Colab or locally)
+```bash
+python fer2013_training.py
 
